@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.signinForm {
+  width: 410px;
+  padding: 57px 33px 37px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.signinFormTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #424242;
+}
+.signinFormField {
+  margin-top: 16px;
+}
+
+.signinFormFieldLabel {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424242;
+}
+
+.signinFormFieldInput {
+  margin-top: 7px;
+  width: 100%;
+  height: 34px;
+  text-indent: 10px;
+  border: 1px solid #c9cacc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.signinFormButton {
+  text-align: end;
+}
+
+.signinFormButton button {
+  margin-top: 32px;
+  background: linear-gradient(104.34deg, #3c4cad -15.34%, #00c3ff 145.95%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 17px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.signinFormButton button:active {
+  background: linear-gradient(104.34deg, #5362be -15.34%, #4ad5ff 145.95%);
+  border: 1.5px solid rgba(29, 138, 216, 0.3);
+}
