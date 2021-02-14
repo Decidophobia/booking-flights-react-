@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './ErrorText.module.css'
 
 function ErrorText(props) {
   return (
-    <div className="error">
+    <div className={styles.error}>
       {props.children}
     </div>
   );

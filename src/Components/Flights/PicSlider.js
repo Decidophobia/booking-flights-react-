@@ -1,13 +1,25 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import styles from './PicSlider.module.css';
 
 function PicSlider(props) {
-  const dispatch = useDispatch();
   const pictures = useSelector((state) => state.pic);
+  const [position, setPosition] = useState('0px');
+
+  const moveLeft = () => {
+    setPosition((start) => start.replace('px', '') - 40 + 'px');
+  };
 
   return (
     <>
-      {pictures && pictures.map((pic, i) => <img key={i} src={pic.url}></img>)}
+      <div
+        className={styles.sliderWrapper}
+        style={{ transform: `translateX(${position})` }}
+      >
+        {pictures &&
+          pictures.map((pic, i) => <img key={i} src={pic.url}></img>)}
+      </div>
+      <button onClick={() => moveLeft()}>лево</button>
     </>
   );
 }

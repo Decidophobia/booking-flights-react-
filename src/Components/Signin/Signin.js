@@ -15,7 +15,7 @@ function Signin(props) {
   const onSubmit = (values, e) => {
     console.log('Data from the form', values);
     localStorage.setItem('auth', JSON.stringify(values));
-    history.push('/flights')
+    history.push('/flights');
   };
 
   const validationSchema = yup.object({
@@ -31,11 +31,11 @@ function Signin(props) {
       })
       .required('* это поле обязательное'),
   });
-useEffect(()=>{
-  if( localStorage.getItem('auth')){
-    history.push('/flights')
-  }
-},[])
+  useEffect(() => {
+    if (localStorage.getItem('auth')) {
+      history.push('/flights');
+    }
+  }, []);
   return (
     <div className={styles.container}>
       <Formik

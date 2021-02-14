@@ -1,11 +1,12 @@
 .container {
   height: 100vh;
-
-  
 }
 .navbar {
   text-align: end;
-  
+  color: rgba(17, 87, 167, 1);
+  font-size: 20px;
+  line-height: 22px;
+  padding: 25px 31px 15px 15px;
 }
 .navbarBtn {
   margin-right: 30px;
@@ -24,13 +25,14 @@
   display: flex;
 }
 .breadcrumbs {
-
 }
 .calendar {
 }
 
-.slider{
+.slider {
   display: flex;
   width: 600px;
   overflow: hidden;
+  margin-top: 24px;
+  flex-direction: column;
 }

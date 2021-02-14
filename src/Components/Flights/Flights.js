@@ -15,8 +15,8 @@ function Flights(props) {
     <div className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.navbarBtn}>
-          <span>Выйти </span>
-          <img src="/img/icons/logout.svg"/>
+          <span>Выйти</span>
+          <img style={{marginLeft: "20px"}} src="/img/icons/logout.svg"/>
         </div>
       </div>
       <div className={styles.flightsContainer}>

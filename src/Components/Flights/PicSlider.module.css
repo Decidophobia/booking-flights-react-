@@ -1,0 +1,6 @@
+.sliderWrapper{
+  position: relative;
+  transition: 0.5s ease;
+  display: flex;
+
+}
